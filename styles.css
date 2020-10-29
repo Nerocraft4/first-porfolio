@@ -1,0 +1,280 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    max-width: 100%; overflow-x: hidden;
+}
+@media (min-width: 1024px){
+    nav{
+        background: purple;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        position: fixed;
+        color: white;
+    }
+    
+    nav h2{
+        padding: 15px;
+        margin: 0px 5px 0px 5px;
+        color: white;
+        transition: 0.2s;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+    }
+    
+    nav h2:hover{
+        color: black;
+        transition: 0.4s;
+    }
+
+    .main-part{
+        height: 100vh;
+    }
+
+    #home{
+        background: url(https://images.unsplash.com/photo-1543053976-5fd9336b6de0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center center fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    #home .elements{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    #home .elements #titleandsub{
+        margin-left: 15%;
+        display: flex;
+        flex-flow: column-reverse;
+        height: 60%;
+    }
+    #home .elements h1{
+        font-size: 4em;
+    }
+    #home .elements h2{
+        font-size: 2em;
+    }
+    #media{
+        display: flex;
+        flex-flow: row;
+    }
+    #media .logos{
+        max-width: 40px;
+        margin: 10px
+    }
+    #pointer{
+        height: auto;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        padding-top: auto;
+        margin-bottom: 5%;
+    }
+    #about{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        background: url(henry.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    #about-right{
+        width: 50%;
+        padding: auto;
+    }
+    #about-left{
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    #about-left #my-image{
+        width: 65%;
+        height: auto;
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    #about-left p{
+        width: 65%;
+        margin-left: auto;
+        margin-right: 5%;
+        margin-top: 20px;
+    }
+    #about-right{
+        width: 40%;
+    }
+    #about-right h2{
+        font-size: 4em;
+    }
+    #about-right h3{
+        margin-top: 20px;
+        font-size: 2em;
+    }
+    #about-right li{
+        margin-top: 8px;
+    }
+    #about-right p{
+        margin: 10px 0px 15px 20px;
+    }
+    #about-right ul{
+        margin: 00px 0px 30px 40px;
+    }
+    #projects{
+        background: url(https://images.unsplash.com/photo-1582721719415-672dab4c1640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center center fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    #projects{
+        min-height: 100vh;
+        height: auto;
+        background-color: #6c5ce7;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    #projects-title{
+        margin-top: 70px;
+        padding: 30px;
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: -40px;
+    }
+    #prjcont{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: center;
+    }
+
+    #prjcont article{
+        width: 28%;
+        min-width: 250px;
+        max-width: 350px;
+        background: url(https://images.unsplash.com/photo-1582721719415-672dab4c1640?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat center center fixed;
+        background-size: cover;
+        height: 350px;
+        max-height: 425px;
+        margin: 100px 30px 40px 30px;
+        display: flex;
+        flex-flow: column;
+        transition: 0.2s;
+    }
+
+    #prjcont article:hover{
+        width: 28%;
+        min-width: 250px;
+        height: 350px;
+        margin: 70px 20px 27px 20px;
+        display: flex;
+        flex-flow: column;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.34s;
+    }
+    
+    #projects-oop a{
+        padding-top: 100%;
+        background: url(oop.gif) no-repeat center center;
+        background-size: cover;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #projects-python a{
+        padding-top: 100%;
+        background: url(python.gif) no-repeat center center;
+        background-size: cover;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #projects-web a{
+        padding-top: 100%;
+        background: url(wb.gif) no-repeat center center;
+        background-size: cover;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #prjcont article h3{
+        max-height: 50px;
+        min-height: 50px;
+        
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+        transition: 0.5;
+        padding-top: 25px;
+    }
+    
+    #contact{
+        background: url(https://images.unsplash.com/photo-1535350356005-fd52b3b524fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)  no-repeat center center fixed;
+        background-size: cover;
+        background-color: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #contact h2{
+        font-size: 4em;
+    }
+    
+    form{
+        height: 40%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    
+    form #subject{
+        height: 150px;
+        padding: 12px;
+        background-color: #333;
+    }
+    
+    input[type=text] {
+        border: none;
+        background-color: #333;
+        border-top: 3px solid purple;
+        border-bottom: 3px solid purple;
+        padding: 12px;
+        color: white;
+    }
+    
+    input[type=email] {
+        border: none;
+        background-color: #333;
+        border-top: 3px solid purple;
+        border-bottom: 3px solid purple;
+        padding: 12px;
+        color: white;
+    }
+    
+    input[type=submit] {
+        background-color: purple;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
