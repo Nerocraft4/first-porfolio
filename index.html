@@ -1,58 +1,83 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PRIMEROS PASOS CON BRACKETS</title>
-        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
-        <link rel="stylesheet" href="agoststyles.css">
-    </head>
-    <body>
-
-        <h1>Apunts d'HTML i CSS</h1>
-        <h2>Aquesta és el primer d'uns quants exercicis que faré com a apunts.</h2>
-        
-        <!--
-            HECHO CON <3 Y JAVASCRIPT
-        -->
-
-        <p>
-            Bienvenido a Brackets, un nuevo editor de código abierto que entiende el diseño web. Es un editor de
-            código liviano y potente al mismo tiempo que incluye herramientas visuales dentro del mismo para
-            que puedas obtener la ayuda que necesites cuando la necesites.
-        </p>
-
-        <!--
-            ¿QUÉ ES BRACKETS?
-        -->
-        <p>
-            <em>Brackets es un editor diferente.</em>
-            Brackets tiene varias características únicas como la Edición rápida y la Vista previa dinámica y muchas
-            más que no vas a encontrar en otros editores. Además, Brackets está escrito en JavaScript, HTML y CSS.
-            Esto significa que la mayoría de quienes usan Brackets tienen las habilidades necesarias para modificar y
-            extender el editor. De hecho, nosotros usamos Brackets todos los días para desarrollar Brackets. Para
-            saber más sobre cómo utilizar estas características únicas, continúa leyendo.
-        </p>
-        
-        <!--
-            EMPIEZA CON TUS PROPIOS ARCHIVOS
-        -->
-        
-        <h3>Proyectos en Brackets</h3>
-        <p>
-            Para poder editar tu propio código en Brackets, puedes simplemente abrir la carpeta que contiene los
-            archivos. Brackets considera a la carpeta abierta como el "proyecto"; características como las Sugerencias
-            de código, la Vista previa dinámica y la Edición rápida solo utilizan los archivos contenidos dentro de
-            la carpeta actualmente abierta.
-        </p>
-        <div class="polaroid">
-            <img href="planningmc.jpg">
-                <img alt="bruh you dumb ass" src="planningmc.jpg" />
-            </img>
-            <div class="cont">
-                <p>El meu mapa fa com 4 mesos</p>
+<head>
+    <link rel='stylesheet' href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#contact"><h2>Contact</h2></a>
+            <a href="#projects"><h2>Projects</h2></a>
+            <a href="#about"><h2>About</h2></a>
+            <a href="#home"><h2>Home</h2></a>
+        </nav>
+    </header>
+    <div id="main">
+        <div id="home" class="main-part">
+            <div class="elements">
+                <div id="titleandsub">
+                    <div id="media">
+                        <a id="logo-insta" href="https://www.instagram.com/paublascx/" target="_blank"><img class="logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"></a>
+                        <a id="logo-in" href="https://www.linkedin.com/in/pau-blasco-roca-7346381b9/" target="_blank"><img class="logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"></a>
+                    </div>
+                    <h2>I'm a Computational Mathematics student</h2>
+                    <h1>Hello, I am Pau Blasco Roca</h1>
+                </div>
+                <div id="pointer">
+                    <h3>
+                        Want to get to know me a bit more?
+                    </h3>
+                    <img id="arrow">
+                </div>
             </div>
         </div>
-    </body>
-</html>
+        <div id="about" class="main-part">
+            <div id="about-left">
+                <img id="my-image" src="https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80">
+                <p>bruh bruh bruh bruuuuuuuh similarly be used on both IDs and elements themselves as demonstrated earlier in the tutorial. Color is just</p>
+            </div>
+            <div id="about-right">
+                <h2>About me</h2>
+                <h3>Who am I?</h3>
+                <p>The hover property can similarly be used on both IDs and elements themselves as demonstrated earlier in the tutorial. Color is just one of many properties you can change using :hover, try experimenting with underlines, border colors and backgrounds for fun.</p>
+                <h3>My background</h3>
+                <p>The hover property can similarly be used on both IDs and elements themselves as demonstrated earlier in the tutorial. Color is just one of many properties you can change using :hover, try experimenting with underlines, border colors and backgrounds for fun.</p>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2. University of x, asknda</li>
+                    <li>Example 3. Also, check this <a href="#">link!</a> (this is just practice)</li>
+                </ul>
+                <h3>My current interests</h3>
+                <p>The hover property can similarly be used on both IDs and elements themselves as demonstrated earlier in the tutorial. Color is just one of many properties you can change using :hover, try experimenting with underlines, border colors and backgrounds for fun.</p>
+            </div>
+        </div>
+        <div id="projects" class="main-part">
+    <h2 id="projects-title"><strong>My projects</strong></h2>
+    <div id="prjcont">
+        <article class="project" id="projects-oop">
+            <a href="#"></a>
+            <h3>OOP with C Sharp and Unity3D</h3>
+        </article>
+        <article class="project" id="projects-python">
+            <a href="#"></a>
+            <h3>Python and Machine Learning</h3>
+        </article>
+        <article class="project" id="projects-web">
+            <a href="#"></a>
+            <h3>Web design, HTML5 CSS3 JS</h3>
+        </article>
+    </div>
+  </div>
+        <div id="contact" class="main-part">
+            <h2>Contact me!</h2>
+            <form>
+                <h3>Fill this form and get in touch with me!</h3>
+                <input type="text" placeholder="Your name">
+                <input type="email" placeholder="Your email">
+                <textarea type="text" placeholder="I want a responsive contact website for my business. My budget is... I also want it to have X and Y, and a custom domain." id="subject"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
